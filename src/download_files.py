@@ -13,26 +13,40 @@ def read_file(filename: str):
 def split_links(content: str):
     return content.split('\n')
 
-# 1. Acessar cada um dos links
-# 2. Buscar pelo link do pdf cujo título tem as palavras (lista, candidatos, ordem, classificação)
-# 3. Download de pdf
-# 4. Salvar pdf localmente
+# [x] Acessar cada um dos links
+# [] Buscar pelo link do pdf cujo título tem as palavras (lista, candidatos, ordem, classificação)
+# [] Download de pdf
+# [] Salvar pdf localmente
 
+def button_click(driver: webdriver.Chrome, classname: str):
+    driver.execute_script(f"document.querySelector('.{classname}').click()")
 
 def fetch_links(links: list[str]):
     pdfs: list[str] = []
     length_pdfs = len(links)
 
-    driver = webdriver.Chrome(options=())
+    driver = webdriver.Chrome()
+    driver.maximize_window()
 
     for link in links:
         
         driver.get(link)
-        driver.find_element(By.CSS_SELECTOR, "a[data-tabname='documento']").click()
 
-        a = driver.find_elements('')
+        document_button = None
+        while document_button == None:
+            document_button = driver.find_element(By.CLASS_NAME, "tab-link")
 
-        urlretrieve()
+        button_click(driver, 'tab-link')
+
+        tab_item = None
+        while tab_item == None:
+            tab_item = driver.find_element(By.CLASS_NAME, "course-tab-item") 
+
+        link_elements = driver.execute_script('return document.querySelectorAll("a.pull-right");')
+        pdf_links: list[str] = []
+
+        for link_element in link_elements:
+            pdf_links.append(link_element.href)
 
         progress = len(pdfs)/length_pdfs * 100
         print(f'{progress:.0f}% concluído --- Link: {link}')
