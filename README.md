@@ -1,5 +1,7 @@
 # Análise de Candidatos ao Vestibular da UEA
-
+UEA — Universidade do Estado do Amazonas \
+**Curso:** Sistemas de Informação \
+**Matéria:** Mineração de Dados 
 ## Sumário
 
 - [Como instalar](#como-instalar)
@@ -34,10 +36,13 @@ Agora você está apto a editar o arquivo [`main.ipynb`](./main.ipynb).
 
 > [Jupyter Notebook no VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
 
-## Curso
+### Geração de CSV
 
-Sistemas de Informação. <br>
-Matéria: Mineração de Dados
+Caso queira gerar os arquivos csv da pasta `/data/csv/` novamente, execute o seguinto comando na raíz do projeto:
+
+```shell
+.\venv\Scripts\python generator.py
+```
 
 ## Roadmap
 
@@ -45,8 +50,8 @@ Matéria: Mineração de Dados
 
 #### Extração dos dados
 
-- 🟡 Busca dos dados brutos (vestibulares 2019-2022)
-- 🟡 Converter dados para um CSV
+- 🟢 Busca dos dados brutos (vestibulares 2019-2022)
+- 🟢 Converter dados para um CSV
 
 #### Pré-processamento dos dados
 
