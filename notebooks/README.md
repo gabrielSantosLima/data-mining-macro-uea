@@ -21,6 +21,7 @@ Roadmap detalhado das tasks de cada fase
     - 🔴 Agrupar por `curso_nome_referencia`
     - 🔴 Agrupar por `id_curso_referencia`
     - 🔴 Ordenar por `classificacao`
+- 🔴 Considerar somente os 200 primeiros candidatos de cada grupo de cada curso em cada ano (só pode ser feito após o passo anterior) 
 - 🔴 Criar atributo `passou`
 - 🔴 Média de notas por idade
 - 🔴 Média de aprovaçao por idade
