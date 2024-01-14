@@ -55,7 +55,7 @@ Caso queira gerar os arquivos csv da pasta `/data/csv/` novamente, execute o seg
 
 #### Pré-processamento dos dados
 
-- 🟡 Avaliação de qualidade dos dados
+- 🟢 Avaliação de qualidade dos dados
 - 🟡 Preparação de dados
 - 🟡 Preparação de dados (limpar dados)
 - 🟡 Preparação de dados (padronização)
