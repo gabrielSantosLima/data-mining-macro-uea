@@ -56,12 +56,12 @@ Caso queira gerar os arquivos csv da pasta `/data/csv/` novamente, execute o seg
 #### Pré-processamento dos dados
 
 - 🟢 Avaliação de qualidade dos dados
-- 🟡 Preparação de dados
-- 🟡 Preparação de dados (limpar dados)
-- 🟡 Preparação de dados (padronização)
+- 🟢 Preparação de dados
+- 🟢 Preparação de dados (limpar dados)
+- 🟢 Preparação de dados (padronização)
 - 🟡 Preparação de dados (discretização)
-- 🟡 Preparação de dados (geração de novos atributos)
-- 🟡 Tratar dados com ética (LGPD)
+- 🟢 Preparação de dados (geração de novos atributos)
+- 🟢 Tratar dados com ética (LGPD)
 
 #### Exploração
 
