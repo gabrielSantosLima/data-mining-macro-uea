@@ -1,12 +1,11 @@
 import fitz
-from fitz.fitz import Document
 from os import listdir
 from os.path import join
 import re
 import csv
 
 def extract_info(pdf_path, year):
-    pdf: Document = fitz.open(pdf_path)
+    pdf = fitz.open(pdf_path)
     candidates = []
     print(f"reading {pdf_path}")
     for page in pdf:
